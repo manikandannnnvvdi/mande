@@ -27,6 +27,11 @@ function addroom(){
  row ="<div class='room_name' id="+roomnames+"onclick='redirectToroomNmae(this.id)'>#"+roomnames+"</div> <hr>";
  function logout(){
   localStorage.removeItem("user_name");
-  localStorage.removeItem("room_name");
+  localStorage.removeItem("roomnames");
+  window.location="index.html";
+}
+function logout(){
+  localStorage.removeItem("user_name");
+  localStorage.removeItem("roomnames");
   window.location="index.html";
 }
